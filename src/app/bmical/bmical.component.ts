@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BmicalComponent implements OnInit {
 
   constructor() { }
+  calimageSrc = 'assets/images/calculate-img.png'
+  calimageAlt = 'calculate BMI'
 
   ngOnInit(): void {
   }

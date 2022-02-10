@@ -8,6 +8,8 @@ import { BmicalComponent } from './bmical/bmical.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './recipes/home/home.component';
+import { ListComponent } from './recipes/list/list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FooterComponent } from './footer/footer.component';
     BmicalComponent,
     AppointmentComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule
