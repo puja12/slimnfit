@@ -11,10 +11,17 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './recipes/home/home.component';
 import { ListComponent } from './recipes/list/list.component';
 import { Routes,RouterModule } from '@angular/router';
+import { ServiceComponent } from './service/service.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 const appRoutes: Routes=[
   {path:'',component:HomepageComponent},
   {path:'about',component:AboutslimnfitComponent},
+  {path:'service',component:ServiceComponent},
+  {path:'contact-us',component:ContactusComponent},
+  {path:'success-stories',component:TestimonialsComponent},
+  {path:'recipes',component:HomeComponent},
 ]
 
 @NgModule({
@@ -27,7 +34,10 @@ const appRoutes: Routes=[
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ListComponent
+    ListComponent,
+    ServiceComponent,
+    ContactusComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
