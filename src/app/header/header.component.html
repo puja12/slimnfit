@@ -42,7 +42,7 @@
                             <li>
                             <a href="">
                             <i class="bx bxs-user"></i>
-                            Account </a>
+                            Login </a>
                             </li>
                         </ul>
                     </div>
@@ -57,7 +57,7 @@
             <div class="container">
                 <div class="mobile-menu">
                     <div class="logo">
-                        <a href="#">
+                        <a routerLink="/">
                             <img src="{{imageSrc}}" alt="{{imageAlt}}" />
                         </a>
                     </div>
@@ -67,19 +67,19 @@
         <div class="desktop-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" routerLink="/">
                     <img src="{{imageSrc}}" alt="{{imageAlt}}" />
                 </a>
                 <div class="collapse navbar-collapse mean-menu" style="display: block;">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                        <a href="https://templates.envytheme.com/aava/default/index-3.html?#" class="nav-link active">
+                        <a routerLink="/about" routerLinkActive="active" class="nav-link">
                         About </a>
                         </li>
                         <li class="nav-item">
-                        <a href="https://templates.envytheme.com/aava/default/index-3.html?#" class="nav-link">
-                        Services <i class="bx bx-chevron-down"></i>
-                        </a>
+                            <a routerLink="/about" routerLinkActive="active" class="nav-link">
+                                Services <i class="bx bx-chevron-down"></i>
+                             </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
                             <a href="https://templates.envytheme.com/aava/default/services.html" class="nav-link">Services</a>
@@ -89,30 +89,9 @@
                             </li>
                         </ul>
                         </li>
+                        
                         <li class="nav-item">
-                        <a href="https://templates.envytheme.com/aava/default/index-3.html?#" class="nav-link">
-                        Shop <i class="bx bx-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item">
-                            <a href="https://templates.envytheme.com/aava/default/products.html" class="nav-link">Products</a>
-                            </li>
-                            <li class="nav-item">
-                            <a href="https://templates.envytheme.com/aava/default/wishlist.html" class="nav-link">Wishlist</a>
-                            </li>
-                            <li class="nav-item">
-                            <a href="https://templates.envytheme.com/aava/default/shopping-cart.html" class="nav-link">Shopping cart</a>
-                            </li>
-                            <li class="nav-item">
-                            <a href="https://templates.envytheme.com/aava/default/checkout.html" class="nav-link">Checkout</a>
-                            </li>
-                            <li class="nav-item">
-                            <a href="https://templates.envytheme.com/aava/default/product-details.html" class="nav-link">Product Details</a>
-                            </li>
-                        </ul>
-                        </li>
-                        <li class="nav-item">
-                        <a href="https://templates.envytheme.com/aava/default/index-3.html?#" class="nav-link">
+                        <a routerLink="/about" routerLinkActive="active" class="nav-link">
                         Recipes <i class="bx bx-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -125,10 +104,10 @@
                         </ul>
                         </li>
                         <li class="nav-item">
-                        <a href="https://templates.envytheme.com/aava/default/contact-us.html" class="nav-link">Success Stories</a>
+                        <a routerLink="/about" routerLinkActive="active" class="nav-link">Success Stories</a>
                         </li>
                         <li class="nav-item">
-                        <a href="https://templates.envytheme.com/aava/default/contact-us.html" class="nav-link">Contact Us</a>
+                        <a routerLink="/about" routerLinkActive="active" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
                     <div class="others-option">
