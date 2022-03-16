@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-bmical',
@@ -6,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bmical.component.css']
 })
 export class BmicalComponent implements OnInit {
-
+  @ViewChild('f') calbmiForm!: NgForm;
   constructor() { }
-  calimageSrc = 'assets/images/calculate-img.png'
+  calimageSrc = 'assets/images/weight-loss.png'
   calimageAlt = 'calculate BMI'
 
   ngOnInit(): void {
   }
 
+  /*onSubmit(form: NgForm){
+    console.log(form)
+  }*/
+
+  onSubmit(){
+    console.log(this.calbmiForm)
+  }
 }

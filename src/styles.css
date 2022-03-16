@@ -2945,7 +2945,7 @@ textarea.form-control {
 }
 .healthy-life-content ul li {
   margin-bottom: 15px;
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 16px;
   position: relative;
   padding-left: 20px;

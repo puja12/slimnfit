@@ -2,47 +2,51 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="calculate-box ptb-100">
-                    <form class="calculate-form">
+                <div class="calculate-box ptb-70">
+                    <!--<form class="calculate-form" (ngSubmit)="onSubmit(f)" #f="ngForm">-->
+                    <form class="calculate-form" (ngSubmit)="onSubmit()" #f="ngForm">
                         <h3>Calculate Your BMI</h3>
 
                         <div class="form-group">
-                            <label>Height / m</label>
-                            <input type="text" class="form-control" id="Height">
+                            <label>Height / cm</label>
+                            <input type="text" name="height" class="form-control" id="Height" ngModel required height #height="ngModel">
+                            <span class="help-block" *ngIf="!height.valid && height.touched">Please enter a valid weight value!!</span>
                         </div>
-
                         <div class="form-group">
                             <label>Weight / kg</label>
-                            <input type="text" class="form-control" id="Weight">
+                            <input type="text" name="weight" class="form-control" id="Weight" ngModel required weight #weight="ngModel">
+                            <span class="help-block" *ngIf="!weight.valid && weight.touched">Please enter a valid weight value!!</span>
                         </div>
-
-                        <div class="form-group">
-                            <label>Age</label>
-                            <input type="text" class="form-control" id="Age">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Sex</label>
-                            <input type="text" class="form-control" id="Sex">
-                        </div>
-
-                        <!--<div class="form-group">
-                            <label>Select an activity factor</label>
-                            <select style="display: none;">
-                                <option value="1">Select</option>
-                                <option value="2">If You Are Sedentary (Little or no Exercise)</option>
-                                <option value="3">If You Are Active (Light Exercise))</option>
-                                <option value="4">If You Are Moderately Active (Moderately Exercise)</option>
-                                <option value="5">If You Are Very Active (Moderately Sports 3-5 Days)</option>
-                                <option value="6">If You Are Very Active (Moderately Week)</option>
-                                <option value="7">If You Are Extra Active (Hard Exercise)</option>
-                            </select><div class="nice-select" tabindex="0"><span class="current">Select</span><ul class="list"><li data-value="1" class="option selected">Select</li><li data-value="2" class="option">If You Are Sedentary (Little or no Exercise)</li><li data-value="3" class="option">If You Are Active (Light Exercise))</li><li data-value="4" class="option">If You Are Moderately Active (Moderately Exercise)</li><li data-value="5" class="option">If You Are Very Active (Moderately Sports 3-5 Days)</li><li data-value="6" class="option">If You Are Very Active (Moderately Week)</li><li data-value="7" class="option">If You Are Extra Active (Hard Exercise)</li></ul></div>	
-                        </div>-->
-
-                        <button type="submit" class="default-btn">
+                        <p *ngIf="">Please enter a valid weight value!!</p>
+                        <button type="submit" class="default-btn" [disabled]="!f.valid">
                             Calculate
                         </button>
                     </form>
+                </div>
+                <div class="bmi_range_tb">
+                    <table id="bmi_range">
+                        <tr>
+                            <th>Bmi Range</th>
+                            <th>Category</th>
+                        </tr>
+                        <tr>
+                            <td>&#60; 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5-25</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr>
+                            <td>25 - 30</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td> &#62; 30</td>
+                            <td>Obese</td>
+                        </tr>
+                        
+                    </table>
                 </div>
             </div>
 
