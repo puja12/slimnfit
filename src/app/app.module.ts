@@ -10,6 +10,24 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './recipes/home/home.component';
 import { ListComponent } from './recipes/list/list.component';
+import { Routes,RouterModule } from '@angular/router';
+import { ServiceComponent } from './service/service.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { DailymealplanComponent } from './dailymealplan/dailymealplan.component';
+import { ServiceslistComponent } from './service/serviceslist/serviceslist.component';
+
+const appRoutes: Routes=[
+  {path:'',component:HomepageComponent},
+  {path:'about',component:AboutslimnfitComponent},
+  {path:'service',component:ServiceComponent,children: [
+    {path: 'serviceslist', component: ServiceslistComponent},
+    {path: 'dailymealplan', component: DailymealplanComponent},
+  ]},
+  {path:'contact-us',component:ContactusComponent},
+  {path:'success-stories',component:TestimonialsComponent},
+  {path:'recipes',component:HomeComponent},
+]
 
 @NgModule({
   declarations: [
@@ -21,10 +39,16 @@ import { ListComponent } from './recipes/list/list.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ListComponent
+    ListComponent,
+    ServiceComponent,
+    ContactusComponent,
+    TestimonialsComponent,
+    ServiceslistComponent,
+    DailymealplanComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
