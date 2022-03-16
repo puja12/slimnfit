@@ -9,9 +9,16 @@ import { NgForm } from '@angular/forms';
 export class BmicalComponent implements OnInit {
   @ViewChild('f') calbmiForm!: NgForm;
   constructor() { }
-  calimageSrc = 'assets/images/weight-loss.png'
-  calimageAlt = 'calculate BMI'
+  calimageSrc = 'assets/images/weight-loss.png';
+  calimageAlt = 'calculate BMI';
 
+  
+  param = {
+    height: '',
+    weight: '',
+    bmi:''
+  };
+  submitted = false;
   ngOnInit(): void {
   }
 
@@ -20,6 +27,10 @@ export class BmicalComponent implements OnInit {
   }*/
 
   onSubmit(){
-    console.log(this.calbmiForm)
+    //console.log(this.calbmiForm);
+    this.submitted=true;
+    this.param.height=this.calbmiForm.value.height;
+    this.param.weight=this.calbmiForm.value.weight;
+    this.param.bmi=this.param.height + this.param.weight;
   }
 }

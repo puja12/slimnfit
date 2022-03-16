@@ -9,21 +9,23 @@
 
                         <div class="form-group">
                             <label>Height / cm</label>
-                            <input type="text" name="height" class="form-control" id="Height" ngModel required height #height="ngModel">
+                            <input type="number" name="height" class="form-control" id="Height" ngModel required height #height="ngModel">
                             <span class="help-block" *ngIf="!height.valid && height.touched">Please enter a valid weight value!!</span>
                         </div>
                         <div class="form-group">
                             <label>Weight / kg</label>
-                            <input type="text" name="weight" class="form-control" id="Weight" ngModel required weight #weight="ngModel">
+                            <input type="number" name="weight" class="form-control" id="Weight" ngModel required weight #weight="ngModel">
                             <span class="help-block" *ngIf="!weight.valid && weight.touched">Please enter a valid weight value!!</span>
                         </div>
-                        <p *ngIf="">Please enter a valid weight value!!</p>
                         <button type="submit" class="default-btn" [disabled]="!f.valid">
                             Calculate
                         </button>
                     </form>
                 </div>
                 <div class="bmi_range_tb">
+                    <div class="row" *ngIf="submitted">
+                        Your BMI is : {{param.bmi}}
+                    </div>
                     <table id="bmi_range">
                         <tr>
                             <th>Bmi Range</th>
