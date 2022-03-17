@@ -23,8 +23,8 @@
                     </form>
                 </div>
                 <div class="bmi_range_tb">
-                    <div class="row" *ngIf="submitted">
-                        Your BMI is : {{param.bmi}}
+                    <div class="row bmi_result" *ngIf="submitted">
+                        Your BMI is : {{result}}
                     </div>
                     <table id="bmi_range">
                         <tr>
