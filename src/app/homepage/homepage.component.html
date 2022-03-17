@@ -166,11 +166,13 @@
 				<div >
 					<div>
 						<div  style="width: 710px;">
-							<div class="single-testimonials"> <i class="bx bxs-quote-right"></i>
-								<p>“Shailaja Mam's diet plans were flexible and not monotonous and were easy to follow in my hectic work schedule. It helped me in balancing the health issues in my early 40s.” </p>
-								<div class="writer-name">
-									<h3>Aditi Khawle</h3> <!--<span>Company of CEO</span>--> </div>
-							</div>
+							<owl-carousel-o [options]="customOptions">
+                                <ng-container *ngFor="let slide of dynamicSlides">
+                                  <ng-template carouselSlide [id]="slide.id">
+                                    <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                                  </ng-template>
+                                </ng-container>
+                              </owl-carousel-o>
 						</div>
 						
 					</div>

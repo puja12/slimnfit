@@ -18,6 +18,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { DailymealplanComponent } from './dailymealplan/dailymealplan.component';
 import { ServiceslistComponent } from './service/serviceslist/serviceslist.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 const appRoutes: Routes=[
   {path:'',component:HomepageComponent},
   {path:'about',component:AboutslimnfitComponent},
@@ -45,12 +48,17 @@ const appRoutes: Routes=[
     ContactusComponent,
     TestimonialsComponent,
     ServiceslistComponent,
-    DailymealplanComponent
+    DailymealplanComponent,
+    BrowserModule,
+    BrowserAnimationsModule,
+    CarouselModule,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
