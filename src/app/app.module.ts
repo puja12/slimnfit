@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutslimnfitComponent } from './aboutslimnfit/aboutslimnfit.component';
 import { BmicalComponent } from './bmical/bmical.component';
@@ -50,7 +53,9 @@ const appRoutes: Routes=[
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

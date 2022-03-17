@@ -162,20 +162,29 @@
             <h2>What our customers say</h2>
         </div>-->
 		<div class="testimonials-content">
-			<div class="testimonials-slider ">
-				<div >
-					<div>
-						<div  style="width: 710px;">
-							<div class="single-testimonials"> <i class="bx bxs-quote-right"></i>
-								<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus com modo viverra maecenas accumsan lacus vel facilisis.” </p>
-								<div class="writer-name">
-									<h3>Alex Dew</h3> <span>Company of CEO</span> </div>
-							</div>
-						</div>
 						
-					</div>
-				</div>
-				<div class="owl-nav disabled">
+							<div class="single-testimonials"> <i class="bx bxs-quote-right"></i>
+                                <owl-carousel-o [options]="customOptions">
+   
+                                    <ng-container *ngFor="let slide of slides">
+                                      <ng-template carouselSlide [id]="slide.id">
+                                        
+                                        <p>“{{slide.img}}”</p>
+                                        <div class="writer-name">
+                                            <h3>{{slide.author}}</h3></div>
+                                      </ng-template>
+                                    </ng-container>
+                                       
+                                    </owl-carousel-o>
+								<!--<p>“Shailaja Mam's diet plans were flexible and not monotonous and were easy to follow in my hectic work schedule. It helped me in balancing the health issues in my early 40s.” </p>
+								<div class="writer-name">
+									<h3>Aditi Khawle</h3> <!--<span>Company of CEO</span> </div>-->
+							</div>
+                            
+						
+						
+					
+				<!--<div class="owl-nav ">
 					<button type="button" role="presentation" class="owl-prev"><i class="flaticon-left-arrow"></i></button>
 					<button type="button" role="presentation" class="owl-next"><i class="flaticon-right-arrow"></i></button>
 				</div>
@@ -183,8 +192,8 @@
 					<button role="button" class="owl-dot"><span></span></button>
 					<button role="button" class="owl-dot active"><span></span></button>
 					<button role="button" class="owl-dot"><span></span></button>
-				</div>
-			</div>
+				</div>-->
+			
 		</div>
 		<h4>Testimonials</h4> </div>
 </section>
