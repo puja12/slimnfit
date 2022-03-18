@@ -38,11 +38,11 @@
                         </li>
                     </ul>
                     <h3>
-                    <a href="">
+                    <a routerLink="recipe-detail">
                     7 Steps to Stay Healthy During Times </a>
                     </h3>
                     
-                    <a href="" class="read-more">
+                    <a [routerLink]="[{ outlets: { recipes: ['path'],detail: ['path'] } }]" class="read-more">
                     Read More </a>
                 </div>
             </div>
@@ -104,3 +104,4 @@
     </div>
     </div>
     </section>
+    

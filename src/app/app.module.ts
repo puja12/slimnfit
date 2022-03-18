@@ -20,6 +20,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { DailymealplanComponent } from './dailymealplan/dailymealplan.component';
 import { ServiceslistComponent } from './service/serviceslist/serviceslist.component';
+import { DetailsComponent } from './recipes/details/details.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes=[
   {path:'',component:HomepageComponent},
@@ -30,7 +32,13 @@ const appRoutes: Routes=[
   ]},
   {path:'contact-us',component:ContactusComponent},
   {path:'success-stories',component:TestimonialsComponent},
-  {path:'recipes',component:HomeComponent},
+  {path:'recipes',component:HomeComponent,children: [
+    {path: 'recipeslist', component: ListComponent},
+    {path: 'recipedetail', component: DetailsComponent,outlet:'detail'},
+  ]},
+  {path:'recipe-detail',component:DetailsComponent},
+  {path:'login',component:LoginComponent},
+  
 ]
 
 @NgModule({
@@ -48,7 +56,9 @@ const appRoutes: Routes=[
     ContactusComponent,
     TestimonialsComponent,
     ServiceslistComponent,
-    DailymealplanComponent
+    DailymealplanComponent,
+    DetailsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

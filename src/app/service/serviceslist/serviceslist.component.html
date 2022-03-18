@@ -18,69 +18,22 @@
 <section class="what-we-offer-area services-page-style pt-100 pb-70">
     <div class="container">
         <div class="section-title"> <span>What We Offer</span>
-            <h2>Diet & Nutrition Services</h2> </div>
+            <h2>Diet & Nutrition Services</h2> 
+        </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" *ngFor="let curr_list of service_list">
                 <div class="single-what-we-offer">
-                    <a href="services-details.html"> <img src="assets/images/what-we-offer/what-we-offer-1.jpg" alt="Image"> </a>
+                    <a href="#"> <img [src]=curr_list.imgSrc alt="Image"> </a>
                     <div class="what-we-offer-content">
                         <h3>
-                                <a href="services-details.html">Nutrition Response Testing</a>
-                            </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> <a href="services-details.html" class="read-more">Read More</a> </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-what-we-offer">
-                    <a href="services-details.html"> <img src="assets/images/what-we-offer/what-we-offer-2.jpg" alt="Image"> </a>
-                    <div class="what-we-offer-content">
-                        <h3>
-                                <a href="services-details.html">Weight Loss Program</a>
-                            </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> <a href="services-details.html" class="read-more">Read More</a> </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-what-we-offer">
-                    <a href="services-details.html"> <img src="assets/images/what-we-offer/what-we-offer-3.jpg" alt="Image"> </a>
-                    <div class="what-we-offer-content">
-                        <h3>
-                                <a href="services-details.html">Nutrition Response Testing</a>
-                            </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> <a href="services-details.html" class="read-more">Read More</a> </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-what-we-offer">
-                    <a href="services-details.html"> <img src="assets/images/what-we-offer/what-we-offer-4.jpg" alt="Image"> </a>
-                    <div class="what-we-offer-content">
-                        <h3>
-                                <a href="services-details.html">Child Nutrition</a>
-                            </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> <a href="services-details.html" class="read-more">Read More</a> </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-what-we-offer">
-                    <a href="services-details.html"> <img src="assets/images/what-we-offer/what-we-offer-5.jpg" alt="Image"> </a>
-                    <div class="what-we-offer-content">
-                        <h3>
-                                <a href="services-details.html">Fitness & Performance</a>
-                            </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> <a href="services-details.html" class="read-more">Read More</a> </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-what-we-offer">
-                    <a href="services-details.html"> <img src="assets/images/what-we-offer/what-we-offer-6.jpg" alt="Image"> </a>
-                    <div class="what-we-offer-content">
-                        <h3>
-                                <a href="services-details.html">Health and Nutrition Testing</a>
-                            </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> <a href="services-details.html" class="read-more">Read More</a> </div>
+                            <a href="#">{{curr_list.name}}</a>
+                        </h3>
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> <a href="services-details.html" class="read-more">Read More</a> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </section>
 <!-- End What We Offer Area -->
