@@ -36,6 +36,7 @@ const appRoutes: Routes=[
     {path: 'recipeslist', component: ListComponent},
     {path: 'recipedetail', component: DetailsComponent,outlet:'detail'},
   ]},
+  {path: 'recipes-list', component: ListComponent},
   {path:'recipe-detail',component:DetailsComponent},
   {path:'login',component:LoginComponent},
   
