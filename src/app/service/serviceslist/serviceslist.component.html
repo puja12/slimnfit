@@ -21,12 +21,12 @@
             <h2>Diet & Nutrition Services</h2> 
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6" *ngFor="let curr_list of service_list">
+            <div class="col-lg-3 col-md-6" *ngFor="let curr_list of service_list">
                 <div class="single-what-we-offer">
                     <a href="#"> <img [src]=curr_list.imgSrc alt="Image"> </a>
                     <div class="what-we-offer-content">
                         <h3>
-                            <a href="#">{{curr_list.name}}</a>
+                            {{curr_list.name}}
                         </h3>
                         <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> <a href="services-details.html" class="read-more">Read More</a> -->
                     </div>

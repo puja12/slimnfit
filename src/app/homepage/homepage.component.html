@@ -74,31 +74,28 @@
                     <div class="row">
                         <div class="col-lg-10 col-sm-10">
                             <ul class="mb-need">
-                                <li><span>Early Morning : </span>Antioxidant rich juice </li>
+                                <li><span>Early Morning : </span>Detox Juice </li>
                                 <li><span>Breakfast : </span>Protein or complex carbs</li>
                                 <li><span>Mid Morning : </span>Fruits or fresh vegetable juice</li>
                                 <li><span>Lunch : </span>Low GI atta roti + vegetable + salad</li>
-                                <li><span>Evening Snacks : </span>Health Total teas & snacks</li>
+                                <li><span>Evening Snacks : </span>Teas & snacks</li>
                                 <li><span>Before Dinner : </span></li>
                                 <li><span>Dinner : </span>Protein & fibre rich</li>
                             </ul>
                         </div>
-                        <!--<div class="col-lg-6 col-sm-6">
-                            <ul>
-                                <li>Evening Snacks</li>
-                                <li>Before Dinner</li>
-                                <li>Dinner</li>
-                            </ul>
-                        </div>-->
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-7">
-                <div class="healthy-life-img-3">
-                    <img [src]="mealplanimageSrc" [alt]="mealplanimageAlt" />
-
-                    <!--<img src="{{imageSrc}}" alt="{{imageAlt}}" />-->
+                <!--<div class="healthy-life-img-3">
+                    <img [src]="mealplanimageSrc" [alt]="mealplanimageAlt"/>
+                </div>-->
+                <div class="row">
+                    <div class="col-lg-4 mealplan" *ngFor="let meal of mealplan">
+                        <img [src]="meal.imageSrc" [alt]="mealplanimageAlt"/>
+                        <p>{{meal.title}}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,57 +140,26 @@
 <app-bmical></app-bmical>
 <!-- End Calculate Area -->
 
-<!-- Start Team Area 
-<section class="team-area team-area-style-three ptb-100" style="background-color: #f9f9f9;">
-    <div class="container">
-        <div class="section-title">
-            <span class="top-title">Listen to Them</span>
-            <h2>What our customers say</h2>
-        </div>
-
-    </div>
-</section>-->
-<!-- End Team Area -->
-
 <section class="testimonials-area testimonials-area-style-two style-about-page pt-100">
 	<div class="container">
-        <!--<div class="section-title">
-            <span class="top-title">Listen to Them</span>
-            <h2>What our customers say</h2>
-        </div>-->
 		<div class="testimonials-content">
 						
-							<div class="single-testimonials"> <i class="bx bxs-quote-right"></i>
-                                <owl-carousel-o [options]="customOptions">
-   
-                                    <ng-container *ngFor="let slide of slides">
-                                      <ng-template carouselSlide [id]="slide.id">
-                                        
-                                        <p>“{{slide.img}}”</p>
-                                        <div class="writer-name">
-                                            <h3>{{slide.author}}</h3></div>
-                                      </ng-template>
-                                    </ng-container>
-                                       
-                                    </owl-carousel-o>
-								<!--<p>“Shailaja Mam's diet plans were flexible and not monotonous and were easy to follow in my hectic work schedule. It helped me in balancing the health issues in my early 40s.” </p>
-								<div class="writer-name">
-									<h3>Aditi Khawle</h3> <!--<span>Company of CEO</span> </div>-->
-							</div>
-                            
-						
-						
-					
-				<!--<div class="owl-nav ">
-					<button type="button" role="presentation" class="owl-prev"><i class="flaticon-left-arrow"></i></button>
-					<button type="button" role="presentation" class="owl-next"><i class="flaticon-right-arrow"></i></button>
-				</div>
-				<div class="owl-dots">
-					<button role="button" class="owl-dot"><span></span></button>
-					<button role="button" class="owl-dot active"><span></span></button>
-					<button role="button" class="owl-dot"><span></span></button>
-				</div>-->
-			
+            <div class="single-testimonials"> <i class="bx bxs-quote-right"></i>
+                <owl-carousel-o [options]="customOptions">
+
+                    <ng-container *ngFor="let slide of slides">
+                        <ng-template carouselSlide [id]="slide.id">
+                        
+                        <p>“{{slide.img}}”</p>
+                        <div class="writer-name">
+                            <h3>{{slide.author}}</h3></div>
+                        </ng-template>
+                    </ng-container>
+                        
+                    </owl-carousel-o>
+               
+            </div>
+            
 		</div>
 		<h4>Testimonials</h4> </div>
 </section>
