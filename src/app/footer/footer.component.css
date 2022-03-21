@@ -1,0 +1,13 @@
+.rights{
+    color: #fff;
+    border-top: 1px solid #333535;
+    margin-top: 25px;
+    padding-top: 10px;
+}
+
+.footer-designedby{
+    text-align: right;
+}
+.single-footer-widget img{
+    width:75%;
+}
