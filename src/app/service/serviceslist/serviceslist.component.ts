@@ -19,7 +19,7 @@ export class ServiceslistComponent implements OnInit {
     {id: '7',name:"Sports Nutrition",imgSrc:"assets/images/services/sports-nutrition.jpg"},
     {id: '8',name:"Immunity Boosting",imgSrc:"assets/images/services/immunity-salad.jpg"},
     {id: '9',name:"Acidity Management",imgSrc:"assets/images/services/acidity-management.jpg"},
-    {id: '10',name:"LBS Management",imgSrc:"assets/images/services/what-we-offer-2.jpg"},
+    {id: '10',name:"IBS Management",imgSrc:"assets/images/services/rritable-Bowel-Syndrome.png"},
     {id: '4',name:"Post Pregnancy Nutrition & Weight Loss",imgSrc:"assets/images/services/postpartum-diet-plan-for-weight-loss.jpg"},
   ];
 
