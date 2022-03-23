@@ -60,48 +60,6 @@
 </section>
 <!-- End Expertise Area -->
 
-<!-- Start Healthy Life Area -->
-<section class="healthy-life-area healthy-life-area-style-three bg-color-three ptb-70">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5">
-                <div class="healthy-life-content">
-                    <h2>What will your Meal Plan look like</h2>
-                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida amet, consectetur adipiscing.</p>
-
-                    <h3>We Also Offer Online Nutrition Therapy for the Following:</h3>-->
-
-                    <div class="row">
-                        <div class="col-lg-10 col-sm-10">
-                            <ul class="mb-need">
-                                <li><span>Early Morning : </span>Detox Juice </li>
-                                <li><span>Breakfast : </span>Protein or complex carbs</li>
-                                <li><span>Mid Morning : </span>Fruits or fresh vegetable juice</li>
-                                <li><span>Lunch : </span>Low GI atta roti + vegetable + salad</li>
-                                <li><span>Evening Snacks : </span>Teas & snacks</li>
-                                <li><span>Before Dinner : </span></li>
-                                <li><span>Dinner : </span>Protein & fibre rich</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-7">
-                <!--<div class="healthy-life-img-3">
-                    <img [src]="mealplanimageSrc" [alt]="mealplanimageAlt"/>
-                </div>-->
-                <div class="row">
-                    <div class="col-lg-4 mealplan" *ngFor="let meal of mealplan">
-                        <img [src]="meal.imageSrc" [alt]="mealplanimageAlt"/>
-                        <p>{{meal.title}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Healthy Life Area -->
 
 <!-- Start About Us Area -->
 <section class="about-us-area about-us-area-style-three bg-color-three ptb-70">
@@ -133,6 +91,50 @@
     </div>
 </section>
 <!-- End About Us Area -->
+
+
+<!-- Start Healthy Life Area -->
+<section class="healthy-life-area healthy-life-area-style-three bg-color-three ptb-70">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="healthy-life-content">
+                    <h2>What will your Meal Plan look like</h2>
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida amet, consectetur adipiscing.</p>
+
+                    <h3>We Also Offer Online Nutrition Therapy for the Following:</h3>-->
+
+                    <div class="row">
+                        <div class="col-sm-10 col-lg-10">
+                            <ul class="mb-need">
+                                <li><span>Early Morning : </span>Detox Juice </li>
+                                <li><span>Breakfast : </span>Protein or complex carbs</li>
+                                <li><span>Mid Morning : </span>Fruits or fresh vegetable juice</li>
+                                <li><span>Lunch : </span>Low GI atta roti + vegetable + salad</li>
+                                <li><span>Evening Snacks : </span>Teas & snacks</li>
+                                <li><span>Before Dinner : </span></li>
+                                <li><span>Dinner : </span>Protein & fibre rich</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <!--<div class="healthy-life-img-3">
+                    <img [src]="mealplanimageSrc" [alt]="mealplanimageAlt"/>
+                </div>-->
+                <div class="row">
+                    <div class="col-sm-4 mealplan" *ngFor="let meal of mealplan">
+                        <img [src]="meal.imageSrc" [alt]="mealplanimageAlt"/>
+                        <p>{{meal.title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Healthy Life Area -->
 
 
 
@@ -167,9 +169,6 @@
 <!-- Start Appointment Area -->
 <app-appointment></app-appointment>
 <!-- End Appointment Area -->
-
-
-
 
 
 <!-- Start Recipes Area -->
