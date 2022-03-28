@@ -53,7 +53,7 @@
     <!-- Start Top Header -->
     <!-- Start Navbar Area -->
     <div class="navbar-area navbar-area-style-three">
-        <div class="mobile-nav">
+       <!-- <div class="mobile-nav">
             <div class="container">
                 <div class="mobile-menu">
                     <div class="logo">
@@ -63,14 +63,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="desktop-nav">
             <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
+                <div class="mobile-menu mean-container">
+                <nav class="navbar navbar-expand-md navbar-light mean-nav">
+                 <div class="logo"> 
                 <a class="navbar-brand" routerLink="/">
                     <img src="{{imageSrc}}" alt="{{imageAlt}}" />
                 </a>
-                <div class="collapse navbar-collapse mean-menu" style="display: block;">
+            </div>  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse"  id="collapsibleNavbar">
                     <ul class="navbar-nav m-auto">
                         <!--<li class="nav-item">
                             <a routerLink="/" routerLinkActive="active" class="nav-link">
@@ -122,6 +128,7 @@
                     </div>
                 </div>
                 </nav>
+            </div>
             </div>
         </div>
         <div class="others-option-for-responsive">

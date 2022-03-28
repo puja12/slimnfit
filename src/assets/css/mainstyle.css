@@ -8134,46 +8134,48 @@ textarea.form-control {
       padding-top: 15px;
       padding-bottom: 15px;
     }
-    .mobile-nav {
+    /*.mobile-nav {
       display: block;
-    }
-    .mobile-nav .logo {
+    }*/
+    .desktop-nav .logo {
       position: relative;
       width: 60%;
       z-index: 999;
-      max-width: 120px;
+      max-width: 150px;
+      padding-left: 10px;
     }
-    .mobile-nav .mobile-menu {
+    .desktop-nav .mobile-menu {
       position: relative;
     }
-    .mobile-nav .mobile-menu.mean-container .mean-nav {
-      margin-top: 50px;
+    .desktop-nav .mobile-menu.mean-container .mean-nav {
+      margin-top: 5px;
     }
-    .mobile-nav .mobile-menu.mean-container .mean-nav ul {
+    .navbar-area .desktop-nav .navbar .navbar-nav .nav-item a {
+      padding: 10px 15px;
+    }
+    .desktop-nav .mobile-menu.mean-container .mean-nav ul {
       font-size: 15px;
     }
-    .mobile-nav .mobile-menu.mean-container .mean-nav ul li a.active {
+    .desktop-nav .mobile-menu.mean-container .mean-nav ul li a.active {
       color: #62bd5e;
     }
-    .mobile-nav .mobile-menu.mean-container .mean-nav ul li li a {
+    .desktop-nav .mobile-menu.mean-container .mean-nav ul li li a {
       font-size: 14.5px;
     }
-    .mobile-nav .mobile-menu.mean-container .navbar-nav {
+    .desktop-nav .mobile-menu.mean-container .navbar-nav {
       overflow-y: scroll;
       height: 255px;
       -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
       box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     }
-    .mobile-nav .mobile-menu.mean-container a.meanmenu-reveal {
+    .desktop-nav .mobile-menu.mean-container a.meanmenu-reveal {
       color: #1b1b1b;
       padding-top: 11px;
     }
-    .mobile-nav .mobile-menu.mean-container a.meanmenu-reveal span {
+    .desktop-nav .mobile-menu.mean-container a.meanmenu-reveal span {
       background: #1b1b1b;
     }
-    .desktop-nav {
-      display: none;
-    }
+    
     .others-option {
       display: none;
     }
