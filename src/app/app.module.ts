@@ -22,7 +22,6 @@ import { DailymealplanComponent } from './dailymealplan/dailymealplan.component'
 import { ServiceslistComponent } from './service/serviceslist/serviceslist.component';
 import { DetailsComponent } from './recipes/details/details.component';
 import { LoginComponent } from './login/login.component';
-import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
 
 const appRoutes: Routes=[
   {path:'',component:HomepageComponent},
