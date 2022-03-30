@@ -59,6 +59,9 @@ export class HomepageComponent implements OnInit {
     {mid:'1',imageSrc:'assets/images/meal_plan/dinner.jpg',imgAlt:'',title:'Dinner'},
   ];
 
+  onDivClick(){    
+    console.log("DIV is clicked!");    
+  }    
   ngOnInit(): void {
   }
 
