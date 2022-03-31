@@ -22,6 +22,7 @@ import { DailymealplanComponent } from './dailymealplan/dailymealplan.component'
 import { ServiceslistComponent } from './service/serviceslist/serviceslist.component';
 import { DetailsComponent } from './recipes/details/details.component';
 import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes=[
   {path:'',component:HomepageComponent},
@@ -59,7 +60,8 @@ const appRoutes: Routes=[
     ServiceslistComponent,
     DailymealplanComponent,
     DetailsComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

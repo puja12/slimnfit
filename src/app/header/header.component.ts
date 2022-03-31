@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  // boolean to add dynamically the 'aria-hidden' by attribute binding.
+  isMobile = window.innerWidth <= 1023
 
   constructor() { }
   imageSrc = 'assets/images/logo.png'
@@ -13,4 +15,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showMenu() {
+    // removes the hidden class and adds the visibility class.
+    let navbar = document.getElementById('navbar')
+    if(navbar !== null){
+      navbar.classList.remove('desktop-only')
+      navbar.classList.remove('hide-menu')
+      navbar.classList.add('show-menu')
+    }
+    
+  }
 }
