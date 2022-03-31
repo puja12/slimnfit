@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   }
 
   showMenu() {
+    console.log('clicked');
     // removes the hidden class and adds the visibility class.
     let navbar = document.getElementById('navbar')
     if(navbar !== null){

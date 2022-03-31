@@ -6567,9 +6567,9 @@ textarea.form-control {
 }
 
 @media only screen and (max-width: 767px) {
-  .desktop-nav {
-    display: none;
-  }
+  /*.desktop-nav {
+    display: block;
+  }*/
       .ptb-100 {
       padding-top: 50px;
       padding-bottom: 50px;
@@ -8174,9 +8174,9 @@ textarea.form-control {
     .mobile-nav .mobile-menu.mean-container a.meanmenu-reveal span {
       background: #1b1b1b;
     }
-    .desktop-nav {
+    /*.desktop-nav {
       display: none;
-    }
+    }*/
     .others-option {
       display: none;
     }
