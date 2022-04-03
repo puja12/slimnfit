@@ -60,8 +60,7 @@
                         <a routerLink="/">
                             <img src="{{imageSrc}}" alt="{{imageAlt}}" />
                         </a>
-                    </div>
-                    <div>
+                    
                     <button
                     id="open-menu"
                     class="mobile-only menudash"
@@ -69,8 +68,10 @@
                     aria-label="open menu"
                     [attr.aria-hidden]="isMobile ? false : true"
                   >
-                    <img src="/assets/menu.svg" alt="" />
-                  </button></div>
+                    <!--<img src="/assets/menu.svg" alt="" />-->
+                    <i class="bx bx-menu"></i>
+                  </button>
+                </div>
                 </div>
             </div>
           </div>

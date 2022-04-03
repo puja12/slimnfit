@@ -556,7 +556,7 @@ textarea.form-control {
   padding-bottom: 0;
 }
 .navbar-area .desktop-nav .navbar {
-  position: inherit;
+  /*position: inherit;*/ /*to bring mobile menu on top of banner*/
   padding: 0;
 }
 .navbar-area .desktop-nav .navbar .navbar-brand {
@@ -1642,6 +1642,7 @@ textarea.form-control {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   margin-bottom: 30px;
+  min-height: 184px;
 }
 .single-expertise-box i {
   position: absolute;
@@ -8142,26 +8143,26 @@ textarea.form-control {
     }
     .mobile-nav .logo {
       position: relative;
-      width: 60%;
       z-index: 999;
-      max-width: 120px;
+     /*
+      width: 30%; 
+      max-width: 120px;*/
     }
     .mobile-nav .mobile-menu {
       position: relative;
+     /* margin-top: 50px;*/
     }
-    .mobile-nav .mobile-menu.mean-container .mean-nav {
-      margin-top: 50px;
-    }
-    .mobile-nav .mobile-menu.mean-container .mean-nav ul {
+    
+    .mobile-nav .mobile-menu nav ul {
       font-size: 15px;
     }
-    .mobile-nav .mobile-menu.mean-container .mean-nav ul li a.active {
+    .mobile-nav .mobile-menu nav ul li a.active {
       color: #62bd5e;
     }
-    .mobile-nav .mobile-menu.mean-container .mean-nav ul li li a {
+    .mobile-nav .mobile-menu nav ul li li a {
       font-size: 14.5px;
     }
-    .mobile-nav .mobile-menu.mean-container .navbar-nav {
+    .mobile-nav .mobile-menu .navbar-nav {
       overflow-y: scroll;
       height: 255px;
       -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);

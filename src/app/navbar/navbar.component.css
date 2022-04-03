@@ -1,3 +1,38 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .bx-x{
+    font-size: 35px;;
+  }
+
+  .navbar{
+    margin-top: 15px;
+    /*border: 1px solid;*/
+    width: 65%;
+    position: absolute;
+    left: 140px;
+    z-index: 1000;
+    background: #fff;
+  }
+  
+  .navbar-area .desktop-nav .navbar ul .navbar-nav{
+    background-color: white;
+    width: 100% !important;
+  }
+
+  .desktop-nav .navbar .navbar-nav .nav-item {
+    padding: 10px 0 10px 0;
+    margin: 10px 0 5px 0;
+    border-bottom: 1px dotted seagreen;
+  }
+
+  .nav-link {
+    display:contents;
+  }
+  /*.m-auto {
+     margin: 0; 
+  }*/
+}
+
 /*nav {
   background-color: #222;
   display: flex;
@@ -22,9 +57,9 @@ ul {
 }
 */
 /* mobile */
-@media screen and (max-width: 1023px) {
+/*@media screen and (max-width: 1023px) {
   nav {
-    padding: 25px 15px;
+    padding: 25px 15px;*/
     /*display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -34,9 +69,9 @@ ul {
     z-index: 2;
     top: 0;
     right: 0;*/
-  }
+/*  }
   ul {
-    margin-top: 40px;
+    margin-top: 40px;*/
     /*list-style: none;
     display: flex;
     flex-direction: column;
@@ -44,8 +79,8 @@ ul {
     width: 100%;
     margin: 0;
     padding: 0;*/
-  }
-}
+ /* }
+}*/
 
 /* desktop 
 @media screen and (min-width: 1024px) {

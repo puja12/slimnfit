@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   // boolean to add dynamically the 'aria-hidden' by attribute binding.
-  isMobile = window.innerWidth <= 1023
+  //isMobile = window.innerWidth <= 1023
+  isMobile = window.innerWidth <= 768
 
   constructor() { }
   imageSrc = 'assets/images/logo.png'
