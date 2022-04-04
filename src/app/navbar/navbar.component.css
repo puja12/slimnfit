@@ -25,6 +25,10 @@
     border-bottom: 1px dotted seagreen;
   }
 
+  .desktop-nav .navbar .navbar-nav .nav-item:last-child{
+    border-bottom: none;
+  }
+
   .nav-link {
     display:contents;
   }
