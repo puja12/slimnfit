@@ -7,11 +7,12 @@
   .navbar{
     margin-top: 15px;
     /*border: 1px solid;*/
-    width: 65%;
+    width: 85%;
     position: absolute;
     left: 140px;
     z-index: 1000;
     background: #fff;
+    align-items: flex-end;
   }
   
   .navbar-area .desktop-nav .navbar ul .navbar-nav{
@@ -32,9 +33,9 @@
   .nav-link {
     display:contents;
   }
-  /*.m-auto {
-     margin: 0; 
-  }*/
+  .navbar-expand-md .navbar-nav {
+    flex-direction: column;
+}
 }
 
 /*nav {

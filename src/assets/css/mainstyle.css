@@ -570,6 +570,8 @@ textarea.form-control {
   list-style-type: none;
   margin-bottom: 0;
   line-height: 1;
+  justify-content: end;
+  /*width: 100%;*/
 }
 .navbar-area .desktop-nav .navbar .navbar-nav .nav-item {
   position: relative;
@@ -6568,9 +6570,9 @@ textarea.form-control {
 }
 
 @media only screen and (max-width: 767px) {
-  /*.desktop-nav {
+  .desktop-nav {
     display: block;
-  }*/
+  }
       .ptb-100 {
       padding-top: 50px;
       padding-bottom: 50px;
@@ -8129,7 +8131,7 @@ textarea.form-control {
       height: 820px;
     }
   }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 768px) {
     .navbar-area {
       padding-top: 15px;
       padding-bottom: 15px;

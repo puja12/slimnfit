@@ -2,13 +2,7 @@
   
   <div class="desktop-nav">
   <div class="container">
-    
-  <nav class="navbar navbar-expand-md navbar-light" id="menunav">
-    <a class="navbar-brand desktop-only" routerLink="/">
-      <img src="{{imageSrc}}" alt="{{imageAlt}}" />
-  </a>
-   <!-- button only visible on mobile devices. -->
-  <button
+    <button
   id="close-menu"
   class="mobile-only"
   (click)="onCloseOnMobile()"
@@ -17,6 +11,12 @@
 >
 <i class="bx bx-x"></i>
 </button>
+  <nav class="navbar navbar-expand-md navbar-light" id="menunav">
+    <a class="navbar-brand desktop-only" routerLink="/">
+      <img src="{{imageSrc}}" alt="{{imageAlt}}" />
+  </a>
+   <!-- button only visible on mobile devices. -->
+  
   
        <ul class="navbar-nav m-auto">
            <!--<li class="nav-item">

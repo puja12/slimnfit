@@ -7,7 +7,8 @@ import { Component, OnInit, ElementRef  } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   // boolean to add dynamically the 'aria-hidden' by attribute binding.
-  isMobile = window.innerWidth <= 1023
+  //isMobile = window.innerWidth <= 1023
+  isMobile = window.innerWidth <= 768
   imageSrc = 'assets/images/logo.png'
   imageAlt = 'slimnfit-nutrition-weightloss'
   constructor(private el: ElementRef) {}
