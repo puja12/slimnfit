@@ -52,21 +52,31 @@
                     <div class="form-group">
                         <label>Your Name</label>
                         <input type="text" id="name" class="form-control" [formControl]="name" required>
-                        <div *ngIf="name.invalid" class="help-block with-errors">Please enter your name</div>
+                        
+                        <div *ngIf="f['name'].touched && f['name'].invalid" class="help-block with-errors">
+                            <div *ngIf="f['name'].errors && f['name'].errors['required']" class="list-unstyled">Please enter your name</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="form-group">
                         <label>Your Email</label>
                         <input type="email" [formControl]="email" id="email" class="form-control" required data-error="Please enter your email">
-                        <div *ngIf="email.invalid" class="help-block with-errors"></div>
+                        <div *ngIf="f['email'].touched && f['email'].invalid" class="help-block with-errors">
+                            <div *ngIf="f['email'].errors && f['email'].errors['required']"  class="list-unstyled">Please enter your email address</div>
+                            <div *ngIf="f['email'].errors && f['email'].errors['email']"  class="list-unstyled">Please, enter valid email address.</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="form-group">
                         <label>Your Phone</label>
-                        <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" class="form-control">
-                        <div class="help-block with-errors"></div>
+                        <input type="text" [formControl]="phone_number" name="phone_number" id="phone_number" required data-error="Please enter your number" class="form-control">
+                        <div *ngIf="f['phone_number'].touched && f['email'].invalid" class="help-block with-errors">
+                            <div *ngIf="f['phone_number'].errors && f['phone_number'].errors['required']"  class="list-unstyled">Please a phone number</div>
+                            <div *ngIf="f['phone_number'].errors && f['phone_number'].errors['pattern']"  class="list-unstyled">Please, enter valid phone number</div>
+                            <div *ngIf="f['phone_number'].errors && f['phone_number'].errors['pattern']"  class="list-unstyled">Please, enter valid phone number</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
@@ -80,7 +90,9 @@
                     <div class="form-group">
                         <label>Your Message</label>
                         <textarea [formControl]="message" class="form-control" id="message" cols="30" rows="4" required data-error="Write your message"></textarea>
-                        <div *ngIf="message.invalid" class="help-block with-errors"></div>
+                        <div *ngIf="f['message'].touched && f['message'].invalid" class="help-block with-errors">
+                            <div *ngIf="f['message'].errors && f['message'].errors['required']" class="list-unstyled">Message is required.</div>
+                        </div>
                         <input [formControl]="honeypot" class="hidden" type="text" />
                     </div>
                 </div>
