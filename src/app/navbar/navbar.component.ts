@@ -9,8 +9,8 @@ export class NavbarComponent implements OnInit {
   // boolean to add dynamically the 'aria-hidden' by attribute binding.
   //isMobile = window.innerWidth <= 1023
   isMobile = window.innerWidth <= 768
-  imageSrc = 'assets/images/logo.png'
-  imageAlt = 'slimnfit-nutrition-weightloss'
+  imageSrc = 'assets/images/theweightguru-logo.png'
+  imageAlt = 'weightguru-nutrition-weightloss'
   constructor(private el: ElementRef) {}
 
   ngOnInit() {

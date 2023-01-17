@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   constructor() { }
-  imageSrc = 'assets/images/logo.png'
-  imageAlt = 'slimnfit-nutrition-weightloss'
+  imageSrc = 'assets/images/theweightguru-logo-b-w.png'
+  imageAlt = 'weightguru-nutrition-weightloss'
   ngOnInit(): void {
   }
 

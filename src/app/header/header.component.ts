@@ -11,8 +11,8 @@ export class HeaderComponent implements OnInit {
   isMobile = window.innerWidth <= 768
 
   constructor() { }
-  imageSrc = 'assets/images/logo.png'
-  imageAlt = 'slimnfit-nutrition-weightloss'
+  imageSrc = 'assets/images/theweightguru-logo.png'
+  imageAlt = 'weightguru-nutrition-weightloss'
   ngOnInit(): void {
   }
 
