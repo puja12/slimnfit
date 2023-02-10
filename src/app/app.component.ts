@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Slimnfit - Diet - Nutrition Health Center';
+  title = 'The Weight Guru - Diet & Nutrition Health Center';
 }
